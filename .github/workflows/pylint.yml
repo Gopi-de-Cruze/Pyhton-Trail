@@ -33,6 +33,7 @@ jobs:
       with:
         name: pylint-report
         path: pylint_report.txt
+        I am Here
     - name: Generate badge JSON
       run: |
           SCORE=$(grep -oP '(?<=Your code has been rated at )[-0-9\.]+' pylint_report.txt)
